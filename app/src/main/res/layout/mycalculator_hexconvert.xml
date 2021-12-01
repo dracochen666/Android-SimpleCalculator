@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hex_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="转换数："/>
+
+        <EditText
+            android:id="@+id/hex_et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入十进制数字"
+            android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/hex_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="转换成为："/>
+        <RadioGroup
+            android:id="@+id/rg_hex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/bf_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二进制"/>
+            <RadioButton
+                android:id="@+id/bf_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="八进制"/>
+            <RadioButton
+                android:id="@+id/bf_sixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十六进制"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/hex_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结果："/>
+        <TextView
+            android:id="@+id/hex_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/hex_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"/>
+    </LinearLayout>
+</LinearLayout>
